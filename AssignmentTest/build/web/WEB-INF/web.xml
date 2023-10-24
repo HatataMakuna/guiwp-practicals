@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ViewOrderStatus</servlet-name>
+        <servlet-class>controller.ViewOrderStatus</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OSDetails</servlet-name>
+        <servlet-class>controller.OSDetails</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateOrderStatus</servlet-name>
+        <servlet-class>controller.UpdateOrderStatus</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewCustomerRecords</servlet-name>
+        <servlet-class>controller.ViewCustomerRecords</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewOrderStatus</servlet-name>
+        <url-pattern>/ViewOrderStatus</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OSDetails</servlet-name>
+        <url-pattern>/OSDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateOrderStatus</servlet-name>
+        <url-pattern>/UpdateOrderStatus</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewCustomerRecords</servlet-name>
+        <url-pattern>/ViewCustomerRecords</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
